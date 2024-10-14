@@ -2,6 +2,7 @@
     <string name="app_name">Csci412_Assignment2</string>
     <string name="explicit">Start Activity Explicitly</string>
     <string name="implicit">Start Activity Implicitly</string>
+    <string name="viewImage">View Image Activity</string>
     <string name="home">Main Activity</string>
     <string name="c1">Device Fragmentation</string>
     <string name="c2">OS Fragmentation</string>
@@ -10,4 +11,5 @@
     <string name="c5">Low User Tolerance</string>
     <string name="name">Haley Huesers</string>
     <string name="id">1219364</string>
+    <string name="capture">Capture Image</string>
 </resources>

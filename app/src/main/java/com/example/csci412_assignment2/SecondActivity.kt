@@ -78,21 +78,21 @@ fun ChallengeApp() {
             verticalArrangement = Arrangement.Center
         )
         {
-        val cList: List<String> = listOf(stringResource(R.string.c1),
-            stringResource(R.string.c2), stringResource(R.string.c3),
-            stringResource(R.string.c4), stringResource(R.string.c5))
-        ChallengeList(challengeList = cList)
+            val cList: List<String> = listOf(stringResource(R.string.c1),
+                stringResource(R.string.c2), stringResource(R.string.c3),
+                stringResource(R.string.c4), stringResource(R.string.c5))
+            ChallengeList(challengeList = cList)
 
-        val context = LocalContext.current
-        Button(onClick = {
-            val intent = Intent(context, MainActivity::class.java)
-            context.startActivity(intent)
-        }) {
-            Text(stringResource(R.string.home))
+            val context = LocalContext.current
+            Button(onClick = {
+                val intent = Intent(context, MainActivity::class.java)
+                context.startActivity(intent)
+            }) {
+                Text(stringResource(R.string.home))
+            }
         }
     }
 }
-    }
 
 @Preview
 @Composable

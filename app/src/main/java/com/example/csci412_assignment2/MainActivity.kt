@@ -65,6 +65,12 @@ fun Greeting(modifier: Modifier = Modifier) {
             }) {
                 Text(stringResource(R.string.implicit))
             }
+            Button(onClick = {
+                val intent = Intent(context, ThirdActivity::class.java)
+                context.startActivity(intent)
+            }) {
+                Text(stringResource(R.string.viewImage))
+            }
         }
     }
 }
