@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <permission
+        android:name="com.example.csci412_assignment2.MSE412"
+        android:protectionLevel="dangerous" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -25,7 +29,8 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.csci412_assignment2.MSE412">
             <intent-filter>
                 <action android:name="com.example.SECOND" />
                 <category android:name="android.intent.category.DEFAULT" />
